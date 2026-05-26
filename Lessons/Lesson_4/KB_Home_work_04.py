@@ -93,4 +93,4 @@ else:
 string_task_10 = adwentures_of_tom_sawer_sentences[-1]
 counter = len(string_task_10)
 print(f"Solution for task 10: The last sentence has {counter} words. \n")
-# --> i have here 0, because of empty element lust from task 07
+# --> i have here 0, because of empty element list from task 07
