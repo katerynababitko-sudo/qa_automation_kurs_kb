@@ -109,7 +109,7 @@ print(f"The total sum for birthday is {total_sum} hrn.\n")
 """
 total_page_amount = (232 // 8) + 1
 
-print(f"{total_page_amount} pages is needed to include 232 photos.\n")
+print(f"{total_page_amount} pages are needed to include 232 photos.\n")
 
 # task 10
 """
