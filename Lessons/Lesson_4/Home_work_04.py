@@ -37,7 +37,7 @@ print(f"The 2nd string without ... is -->\n" + adwentures_of_tom_sawer_new_2, "\
 """
 # I got some not very nice looking string :)
 adwentures_of_tom_sawer_split = adwentures_of_tom_sawer_new_2.split()
-adwentures_of_tom_sawer_final = ",".join(adwentures_of_tom_sawer_split).replace(",", " ").replace("  ", ", ").strip()
+adwentures_of_tom_sawer_final = " ".join(adwentures_of_tom_sawer_split)
 
 print(f"The 3rd string without doubled spaces is --> \n" + adwentures_of_tom_sawer_final, "\n")
 
@@ -45,7 +45,7 @@ print(f"The 3rd string without doubled spaces is --> \n" + adwentures_of_tom_saw
 """ Виведіть, скількі разів у тексті зустрічається літера "h"
 """
 string_task_4 = str(adwentures_of_tom_sawer_final.count("h"))
-print(f"The 4th solution: string contains --> " + string_task_4 + " letters 'h'. \n")
+print(f"The 4th solution: string contains --> " + str(string_task_4) + " letters 'h'. \n")
 
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
@@ -95,6 +95,7 @@ else:
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
 string_task_10 = adwentures_of_tom_sawer_quantity_sentences[-1]
-counter = len(string_task_10)
+list_of_words = string_task_10.split()
+counter = len(list_of_words)
 print(f"Solution for task 10: The last sentence has {counter} words.")
 
