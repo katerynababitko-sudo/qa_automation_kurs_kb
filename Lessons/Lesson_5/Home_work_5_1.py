@@ -57,32 +57,32 @@ print(car_data_sorted_by_price)
 
 
 # 2nd task -> find all cars with price <= 36000
-car_date_filter_by_price = {
+car_data_filter_by_price = {
     car_brand: data
     for car_brand, data in car_data_sorted_by_price.items()
     if data[4] <= search_criteria[2]
 }
-print(car_date_filter_by_price)
+print(car_data_filter_by_price)
 
 
 # 3rd task -> find all cars with engine volume >= 1.6
-car_date_filter_by_engine_volume = {
+car_data_filter_by_engine_volume = {
     car_brand: data
     for car_brand, data in car_data_sorted_by_price.items()
     if data[2] >= search_criteria[1]
 }
-print(car_date_filter_by_engine_volume)
+print(car_data_filter_by_engine_volume)
 
 # 4th task -> find all cars with year >= 2017
-car_date_filter_by_year = {
+car_data_filter_by_year = {
     car_brand: data
     for car_brand, data in car_data_sorted_by_price.items()
     if data[1] >= search_criteria[0]
 }
-print(car_date_filter_by_year)
+print(car_data_filter_by_year)
 
 # 5th task:multiple search:
-car_date_filter_general = {
+car_data_filter_general = {
     car_brand: data
     for car_brand, data in car_data_sorted_by_price.items()
     if (
@@ -91,26 +91,26 @@ car_date_filter_general = {
             data[4] <= search_criteria[2]
     )
  }
-print(car_date_filter_general)
+print(car_data_filter_general)
 
 # 5th task print out the first 5 elements. Final implementation
 # Price
 print(f"\n There is the list with 5 cars with price less than {search_criteria[2]}:")
-for car_brand, data in list(car_date_filter_by_price.items())[:5]:
+for car_brand, data in list(car_data_filter_by_price.items())[:5]:
     print(car_brand, data)
 
 # Engine
 print(f"\n There is the list with 5 cars with engine power more than {search_criteria[1]}:")
-for car_brand, data in list(car_date_filter_by_engine_volume.items())[:5]:
+for car_brand, data in list(car_data_filter_by_engine_volume.items())[:5]:
     print(car_brand, data)
 
 # Year
 print(f"\n There is the list with 5 cars with prod year older than {search_criteria[0]}:")
-for car_brand, data in list(car_date_filter_by_year.items())[:5]:
+for car_brand, data in list(car_data_filter_by_year.items())[:5]:
     print(car_brand, data)
 
 # General
 print(f"\n There is the list with 5 cars within specified search criteria ( year>= , engine_volume >= , price<=)"
       f" {search_criteria}:")
-for car_brand, data in list(car_date_filter_general.items())[:5]:
+for car_brand, data in list(car_data_filter_general.items())[:5]:
     print(car_brand, data)
