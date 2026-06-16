@@ -7,3 +7,8 @@ for element in initial_list:
         list_only_even_numbers.append(element)
 
 print(f"The new list with only even numbers is: {list_only_even_numbers}")
+
+sum_of_even_elements = sum(list_only_even_numbers)
+
+print(f"The total sum of all even elements is: {sum_of_even_elements}")
+
