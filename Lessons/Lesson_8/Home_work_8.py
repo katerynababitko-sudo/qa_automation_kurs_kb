@@ -6,6 +6,10 @@ class Student:
         self.average_grade = average_grade
 
     def set_average_student_grade(self, average_grade: float):
+        """
+        Method to set a new average grade for the defined student.
+        :param average_grade: float.
+        """
         self.average_grade = average_grade
 
 
