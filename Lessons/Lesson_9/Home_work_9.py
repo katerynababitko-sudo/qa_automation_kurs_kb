@@ -1,4 +1,9 @@
 class Rhombus:
+
+    def __init__(self, side_a: str, angle_a: int):
+        self.side_a = side_a
+        self.angle_a = angle_a
+
     def __setattr__(self, name, value):
         if name == "side_a":
             if value <= 0:
@@ -21,10 +26,10 @@ class Rhombus:
         super().__setattr__(name, value)
 
 
-rhombus = Rhombus()
-rhombus.side_a = 10
-rhombus.angle_a = 100
+rhombus = Rhombus(side_a=10, angle_a=100)
+rhombus.color = "blue"
+
 
 print(f"A new rhombus is added with:\n "
-      f"side_a = {rhombus.side_a}\n angle_a = {rhombus.angle_a}\n angle_b = {rhombus.angle_b}")
+      f"side_a = {rhombus.side_a}\n angle_a = {rhombus.angle_a}\n angle_b = {rhombus.angle_b}\n color = {rhombus.color}")
 
